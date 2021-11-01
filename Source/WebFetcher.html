@@ -17,35 +17,7 @@
 	<textarea id="textareaDataFetched" cols="40" rows="16"></textarea>
 </div>
 
-<script type="text/javascript">
+<script type="text/javascript" src="WebFetcher.js"></script>
 
-function buttonFetch_Clicked()
-{
-	var d = document;
-
-	var inputAddressToFetchFrom =
-		d.getElementById("inputAddressToFetchFrom");
-	var textareaDataFetched =
-		d.getElementById("textareaDataFetched");
-
-	var addressToFetchFrom =
-		inputAddressToFetchFrom.value;
-
-	var addressToFetchFromProxied = 
-		"WebFetcher.php?url=" + addressToFetchFrom;
-
-	fetch
-	(
-		addressToFetchFromProxied
-	).then
-	(
-		(response) => response.text()
-	).then
-	(
-		(textFetched) => textareaDataFetched.value = textFetched
-	);
-}
-
-</script>
 </body>
 </html>

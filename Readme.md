@@ -14,12 +14,12 @@ Because of web security constraints, it will be necessary to install the program
 
 1. Download and install XAMPP, which is a bundle of several different web server technologies, notably the Apache web server and the PHP server-side web programming language.
 
-2. Run XAMPP and, on the control panel, click the Start button for Apache.  If an error is displayed, it is likely that some other web server is already using the default port, 80.  In that case, click the Config button, then click the "Apache (httpd.conf)" item from the context menu that appears, locate the line "Listen 80" within the .conf file, change it to, say, "Listen 8080", and save.
+2. Run XAMPP and, on the control panel, click the Start button for Apache.  If an error is displayed, it is likely that some other web server is already using the default port, 80.  In that case, click the Config button, then click the "Apache (httpd.conf)" item from the context menu that appears, locate the line "Listen 80" within the .conf file, change it to, say, "Listen 8080", and save.  Also, if running in Linux, the control panel application may or may not work, and it may instead be necessary to run "sudo chmod +x xampp" and "sudo xampp start" from within the proper directory.
 
-3. In a file explorer window, navigate to C:\xampp\htdocs.
+3. In a file explorer window, navigate to the htdocs directory of the XAMPP installation, perhaps at "C:\xampp\htdocs" or "/opt/lampp/htdocs/".
 
-4. Create a copy of the contents of the WebFetcher repo into a new folder named WebFetcher within the htdocs directory, perhaps by running the command "git clone https://github.com/thiscouldbebetter/WebFetcher" from a command prompt within that directory.
+4. Copy WebFetcher.html, WebFetcher.js, and WebFetcher.php into the htdocs directory.
 
-5. Start a web browser and navigate to the URL "http://localhost/WebFetcher/Source/WebFetcher" (or, if the web server was configured to run on port 8080 in step 2, use "http://localhost:8080/WebFetcher/Source/WebFetcher" instead).
+5. Start a web browser and navigate to the URL "http://localhost/WebFetcher.html" (or, if the web server was configured to run on port 8080 in step 2, use "http://localhost:8080/WebFetcher.html" instead).
 
 6. Click the fetch button to get the web page at the pre-specified URL.
