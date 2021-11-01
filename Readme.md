@@ -5,6 +5,8 @@ A utility to retrieve text over the web implemented in PHP and JavaScript.
 
 Obviously a text-only web fetcher that runs only within a web browser isn't the most useful thing in the world.  This program is mostly meant to serve as a basis for further experimentation and more complex utilities.
 
+<img src="Screenshot.png" />
+
 Running
 -------
 
