@@ -4,17 +4,30 @@
 <div id="divUi">
 	<h3>Web Fetcher</h3>
 
-	<label>Address to Fetch From:</label>
-	<br />
-	<input id="inputAddressToFetchFrom" value="https://bbc.com/news"></input>
-	<br />
+	<div>
+		<label>Address to Fetch From:</label>
+		<input id="inputAddressToFetchFrom" value="https://bbc.com/news"></input>
+	</div>
 
-	<button onclick="buttonFetch_Clicked();">Fetch</button>
-	<br />
+	<div>
+		<button onclick="buttonFetch_Clicked();">Fetch</button>
+	</div>
 
-	<label>Data Fetched:</label>
-	<br />
-	<textarea id="textareaDataFetched" cols="40" rows="16"></textarea>
+	<div>
+		<label>Data Fetched:</label>
+		<br />
+		<textarea id="textareaDataFetched" cols="80" rows="16"></textarea>
+	</div>
+
+	<div>
+		<button onclick="buttonParse_Clicked();">Parse</button>
+	</div>
+
+	<div>
+		<label>Data Parsed:</label>
+		<br />
+		<div id="divDataParsed"></div>
+	</div>
 </div>
 
 <script type="text/javascript" src="WebFetcher.js"></script>
